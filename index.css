@@ -2,9 +2,6 @@
 html{
     color-scheme: dark light;
 }
-:root{
-   
-}
 @media (prefers-color-scheme: dark) {
     .temperature {
       background: #333;
@@ -42,13 +39,56 @@ html{
     padding: 1em;
     width: 50vw;
     height: 10vh;
-    vertical-align: center;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
+    position: static;
   }
+.calculator p {
+    position: relative;
+    text-align: center;
+    vertical-align: text-top;
 
+}
+
+#button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
 .container{
     font-family: 'Roboto', sans-serif;
     font-size: 5vh;
     text-align: center;
+}
+.footer{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vh;
+  text-align: center;
+  bottom: 1px;
+  position: absolute;
 }
