@@ -8,7 +8,7 @@ function weather(){
         success: function (result) {
             "use strict";
             if("main" in result){
-                $(".temp").text(result.main.temp)
+                $(".temp").text(result.main.temp + "K")
             }
             if("name" in result){
                 $(".name").text(result.name)
@@ -17,6 +17,14 @@ function weather(){
         }
     });
     setTimeout(weather, 60000);
+}
+
+document.getElementById("button").addEventListener("click", myFunction);
+i = 0 
+function myFunction() {
+    document.getElementById("eh").innerHTML = i++;
+    
+
 }
 
 
