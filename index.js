@@ -19,13 +19,6 @@ function weather(){
     setTimeout(weather, 60000);
 }
 
-document.getElementById("button").addEventListener("click", myFunction);
-i = 0 
-function myFunction() {
-    document.getElementById("eh").innerHTML = i++;
-    
-
-}
 
 
 
